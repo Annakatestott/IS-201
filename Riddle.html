@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+            <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Annakate Contact </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="education.html">Education</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="experiance.html">Experiance</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="skills.html">Skills</a></li>
+                           <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="tab.html">Tableau</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Youtube.html">Youtube</a></li>
+                          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Riddle.html">Riddle</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                         
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Riddle Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: #f0f8ff;
+    }
+    .riddle-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="riddle-box">
+    <h2>Riddle Generator</h2>
+    <p id="riddle">Click the button to get a riddle!</p>
+    <button onclick="generateRiddle()">New Riddle</button>
+  </div>
+
+  <script>
+    const riddles = [
+      "What has to be broken before you can use it? - An egg.",
+      "I’m tall when I’m young, and I’m short when I’m old. What am I? - A candle.",
+      "What month of the year has 28 days? - All of them.",
+      "What is full of holes but still holds water? - A sponge.",
+      "What question can you never answer yes to? - Are you asleep yet?"
+    ];
+
+    function generateRiddle() {
+      const randomIndex = Math.floor(Math.random() * riddles.length);
+      document.getElementById('riddle').textContent = riddles[randomIndex];
+    }
+  </script>
+
+</body>
+</html></body>
+</html>
